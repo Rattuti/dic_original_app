@@ -41,7 +41,6 @@ export default {
   components: {
     TodoItem
   },
-  name: 'TodosIssues',
   data () {
     return {
       todo: '',

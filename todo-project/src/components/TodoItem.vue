@@ -17,5 +17,14 @@
 <script>
 export default {
   name: 'TodoItem',
+  props: {
+    todo: String,
+    index: Number
+  },
+  methods: {
+    done(index) {
+      this.$emit('handleClick', index);
+    },
+  }
 }
 </script>

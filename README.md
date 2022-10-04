@@ -1,9 +1,25 @@
-## README
 ## 開発環境
 ### 開発言語
 <ul>
   <li>Ruby
   <li>Rails
+</ul>
+
+### 導入したGem
+GoogleMap系
+<ul>
+<li>JavaScript API
+Google Maps をウェブサイトに表示する
+
+<li>Directions API
+最適化された経路検索を自動でできる
+
+<li>Distance Matrix API
+複数の始点・終点の組み合わせルートの「距離」「時間」を求められる
+
+<li>Places API
+施設検索の API、一億件以上の詳細情報を検索・表示できる
+
 </ul>
 
 ## 実行手順

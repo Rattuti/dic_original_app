@@ -3,6 +3,7 @@
 <ul>
   <li>Ruby
   <li>Rails
+  <li>PostgreSQL 14.5
 </ul>
 
 ### 導入したGem

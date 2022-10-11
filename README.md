@@ -33,8 +33,8 @@ GoogleMap系
 
 ## 実行手順
 ```
-$ git clone
-$ cd 
+$ git clone git@github.com:Rattuti/dic_original_app.git
+$ cd dic_original_app
 $ bundle install
 $ rails db:create db:migrate
 $ rails s

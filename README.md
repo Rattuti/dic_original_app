@@ -47,7 +47,7 @@ https://docs.google.com/spreadsheets/d/1EYnPyTVao9NgTIP9SUbL1AImMYYjSJZmA7Hq0IoZ
 https://docs.google.com/spreadsheets/d/1EYnPyTVao9NgTIP9SUbL1AImMYYjSJZmA7Hq0IoZ1Ig/edit#gid=2020033787
 
 ## 画面遷移図
-https://app.diagrams.net/#G1EvBxrhue4H-MsAJLpDibsYzhQZXq8ggE
+![image](https://user-images.githubusercontent.com/93857649/195365256-1ee969c3-ddf0-4aca-ac5c-d9e0d5a726a0.png)
 
 ## ER図
 https://app.diagrams.net/#G1EvBxrhue4H-MsAJLpDibsYzhQZXq8ggE

@@ -29,14 +29,13 @@ API系
     <br>　複数の始点・終点の組み合わせルートの「距離」「時間」を求められる
   <li>Places API
     <br>　施設検索の API、一億件以上の詳細情報を検索・表示できる
-
 </ul>
 
 Gem系
 <ul>
   <li>feedjira
     <br>　XML形式のフィード（RSSなど）を分析し、プログラムで扱えるコードの構造へ変換する
-  <nokogiri>
+  <li>nokogiri
     <br>　XMLやHTML形式から要素を取り出す
 </ul>
 

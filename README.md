@@ -7,8 +7,8 @@
 ### 開発環境
 #### 使用言語
 <ul>
-  <li>Ruby
-  <li>Rails
+  <li>Ruby v3.1.2
+  <li>Rails v6.0.6
   <li>PostgreSQL 14.5
   <li>vue.js
 </ul>
@@ -19,7 +19,6 @@
 </ul>
 
 ### 使用ライブラリ
-API系
 <ul>
   <li>JavaScript API
     <br>　Google Maps をウェブサイトに表示する 
@@ -31,12 +30,13 @@ API系
     <br>　施設検索の API、一億件以上の詳細情報を検索・表示できる
 </ul>
 
-Gem系
 <ul>
   <li>feedjira
     <br>　XML形式のフィード（RSSなど）を分析し、プログラムで扱えるコードの構造へ変換する
   <li>nokogiri
     <br>　XMLやHTML形式から要素を取り出す
+  <li>http
+    <br>　
 </ul>
 
 
@@ -62,4 +62,4 @@ https://docs.google.com/spreadsheets/d/1EYnPyTVao9NgTIP9SUbL1AImMYYjSJZmA7Hq0IoZ
 ![image](https://user-images.githubusercontent.com/93857649/195504091-28867f03-b620-44b6-9ba2-8a15c5597822.png)
 
 ## ワイヤーフレーム
-https://app.diagrams.net/#G1EvBxrhue4H-MsAJLpDibsYzhQZXq8ggE
+https://drive.google.com/file/d/1EvBxrhue4H-MsAJLpDibsYzhQZXq8ggE/view?usp=sharing

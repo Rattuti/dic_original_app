@@ -59,7 +59,7 @@ https://docs.google.com/spreadsheets/d/1EYnPyTVao9NgTIP9SUbL1AImMYYjSJZmA7Hq0IoZ
 ![image](https://user-images.githubusercontent.com/93857649/195365256-1ee969c3-ddf0-4aca-ac5c-d9e0d5a726a0.png)
 
 ## ER図
-![image](https://user-images.githubusercontent.com/93857649/195504091-28867f03-b620-44b6-9ba2-8a15c5597822.png)
+![image](https://user-images.githubusercontent.com/93857649/195533672-561c5a84-dd5e-41fc-9fb3-d03a06c52dac.png)
 
 ## ワイヤーフレーム
 https://drive.google.com/file/d/1EvBxrhue4H-MsAJLpDibsYzhQZXq8ggE/view?usp=sharing

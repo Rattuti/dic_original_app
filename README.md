@@ -50,7 +50,7 @@ https://docs.google.com/spreadsheets/d/1EYnPyTVao9NgTIP9SUbL1AImMYYjSJZmA7Hq0IoZ
 ![image](https://user-images.githubusercontent.com/93857649/195365256-1ee969c3-ddf0-4aca-ac5c-d9e0d5a726a0.png)
 
 ## ER図
-https://app.diagrams.net/#G1EvBxrhue4H-MsAJLpDibsYzhQZXq8ggE
+![image](https://user-images.githubusercontent.com/93857649/195504091-28867f03-b620-44b6-9ba2-8a15c5597822.png)
 
 ## ワイヤーフレーム
 https://app.diagrams.net/#G1EvBxrhue4H-MsAJLpDibsYzhQZXq8ggE

@@ -18,23 +18,24 @@
   <li>AWS
 </ul>
 
-### 使用Gem
-GoogleMap系
+### 使用ライブラリ
+API系
 <ul>
-<li>JavaScript API
-  <br>　Google Maps をウェブサイトに表示する 
-<li>Directions API
-  <br>　最適化された経路検索を自動でできる
-<li>Distance Matrix API
-  <br>　複数の始点・終点の組み合わせルートの「距離」「時間」を求められる
-<li>Places API
-  <br>　施設検索の API、一億件以上の詳細情報を検索・表示できる
+  <li>JavaScript API
+    <br>　Google Maps をウェブサイトに表示する 
+  <li>Directions API
+    <br>　最適化された経路検索を自動でできる
+  <li>Distance Matrix API
+    <br>　複数の始点・終点の組み合わせルートの「距離」「時間」を求められる
+  <li>Places API
+    <br>　施設検索の API、一億件以上の詳細情報を検索・表示できる
+
 </ul>
 
-その他
+Gem系
 <ul>
-<li>feedjira
-  <br>　XML形式のフィード（RSSなど）を分析し、プログラムで扱えるコードの構造へ変換するrubyのライブラリ
+  <li>feedjira
+    <br>　XML形式のフィード（RSSなど）を分析し、プログラムで扱えるコードの構造へ変換するrubyのライブラリ
 </ul>
 
 

@@ -56,7 +56,7 @@ https://docs.google.com/spreadsheets/d/1EYnPyTVao9NgTIP9SUbL1AImMYYjSJZmA7Hq0IoZ
 https://docs.google.com/spreadsheets/d/1EYnPyTVao9NgTIP9SUbL1AImMYYjSJZmA7Hq0IoZ1Ig/edit#gid=2020033787
 
 ## 画面遷移図
-![image](https://user-images.githubusercontent.com/93857649/195365256-1ee969c3-ddf0-4aca-ac5c-d9e0d5a726a0.png)
+![image](https://user-images.githubusercontent.com/93857649/195608872-d4b8033a-5a2b-41c7-a70c-148a5b7177bb.png)
 
 ## ER図
 ![image](https://user-images.githubusercontent.com/93857649/195557237-f40d1c05-2511-45d3-bb16-8730df09d55b.png)

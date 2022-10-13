@@ -35,7 +35,9 @@ API系
 Gem系
 <ul>
   <li>feedjira
-    <br>　XML形式のフィード（RSSなど）を分析し、プログラムで扱えるコードの構造へ変換するrubyのライブラリ
+    <br>　XML形式のフィード（RSSなど）を分析し、プログラムで扱えるコードの構造へ変換する
+  <nokogiri>
+    <br>　XMLやHTML形式から要素を取り出す
 </ul>
 
 

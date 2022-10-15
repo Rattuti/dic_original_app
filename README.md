@@ -11,6 +11,8 @@
   <li>Rails v6.0.6
   <li>PostgreSQL 14.5
   <li>vue.js
+  <li>Yarn v1.22.18
+  <li>Webpack v
 </ul>
 
 #### インフラ

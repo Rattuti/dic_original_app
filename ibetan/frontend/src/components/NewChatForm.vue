@@ -1,9 +1,11 @@
 <template>
     <form>
         <textarea
-        placeholder="メッセージを入力してEnterを押してください"
-        v-model="message"
-        @keypress.enter.prevent="handleSubmit"
+            placeholder=
+            "メッセージを入れて
+            Enterボタンを押してね"
+            v-model="message"
+            @keypress.enter.prevent="handleSubmit"
         ></textarea>
     </form>
 </template>
@@ -17,7 +19,7 @@ export default {
         }
     },
     methods: {
-        handleSubmit(){
+        handleSubmit () {
             this.$emit('connectCable', this.message)
             this.message = ''
         }

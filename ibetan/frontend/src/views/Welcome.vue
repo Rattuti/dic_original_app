@@ -1,15 +1,31 @@
 <template>
     <div class="container welcome">
-        <p class="text-12xl font-bold underline">(仮)いべたん！</p>
+        <p class="text-12xl font-bold underline">
+            (仮)いべたん！
+        </p>
         <p>(仮)住まい地域</p>
 
         <div v-if="shouldShowLoginForm">
-            <LoginForm @redirectToChatRoom="redirectToChatRoom" />
-            <p class="change-form">初めての方は<span @click="shouldShowLoginForm = false">こちら</span>をクリックして<br>ご登録ページへお進みください</p>
+            <LoginForm @redirectToChatRoomBasePage="redirectToChatRoomBasePage" />
+            <p class="change-form">
+                初めての方は
+                <span
+                    @click="shouldShowLoginForm = false"
+                >こちら
+                </span>
+            </p>
         </div>
+
         <div v-if="!shouldShowLoginForm">
-            <SignupForm @redirectToChatRoom="redirectToChatRoom" />
-            <p class="change-form">アカウントをお持ちの方は<span @click="shouldShowLoginForm = true">こちら</span>からログインしてください</p>
+            <SignupForm @redirectToChatRoomBasePage="redirectToChatRoomBasePage" />
+            <p class="change-form">
+                アカウントをお持ちの方は
+                <span
+                    @click="shouldShowLoginForm = true"
+                >
+                こちら
+                </span>
+            </p>
         </div>
     </div>
 </template>
@@ -18,15 +34,18 @@
 import LoginForm from '../components/LoginForm.vue';
 import SignupForm from '../components/SignupForm.vue';
 export default {
-    components: { LoginForm, SignupForm },
+    components: { 
+        LoginForm,
+        SignupForm
+    },
     data(){
         return{
         shouldShowLoginForm: false
         }
     },
     methods: {
-        redirectToChatRoom () {
-            this.$router.push({ name: 'Chatroom' })
+        redirectToChatRoomBasePage () {
+            this.$router.push({ name: 'ChatRoomBasePage' })
         }
     }  
 }

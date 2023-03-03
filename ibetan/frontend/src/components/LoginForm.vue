@@ -36,7 +36,7 @@ export default {
             }
             if (!this.error) {
                 setItem(res.headers, res.data.data.name)
-                this.$emit('redirectToChatRoom')
+                this.$emit('redirectToChatRoomBasePage')
             }
             return res
             }catch (error) {

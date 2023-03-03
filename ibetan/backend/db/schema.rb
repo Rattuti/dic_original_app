@@ -10,37 +10,61 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_25_131848) do
+ActiveRecord::Schema.define(version: 2023_02_12_152037) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
-    t.integer "feed_id"
+    t.bigint "user_id"
     t.string "title"
-    t.string "content"
-    t.datetime "published"
     t.string "url"
-    t.string "author"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_articles_on_user_id"
+  end
+
+  create_table "bookmark_favorites", force: :cascade do |t|
+    t.bigint "bookmark_id", null: false
+    t.bigint "favorite_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["bookmark_id"], name: "index_bookmark_favorites_on_bookmark_id"
+    t.index ["favorite_id"], name: "index_bookmark_favorites_on_favorite_id"
   end
 
   create_table "bookmarks", force: :cascade do |t|
-    t.intenger "user_id"
-    t.intenger "message_id"
+    t.bigint "user_id"
+    t.bigint "article_id"
+    t.bigint "favorite_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["message_id"], name: "index_bookmarks_on_message_id"
+    t.index ["article_id"], name: "index_bookmarks_on_article_id"
+    t.index ["favorite_id"], name: "index_bookmarks_on_favorite_id"
     t.index ["user_id"], name: "index_bookmarks_on_user_id"
   end
 
-  create_table "favorites", force: :cascade do |t|
-    t.intenger "user_id"
-    t.intenger "message_id"
+  create_table "events", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "name"
+    t.datetime "start"
+    t.datetime "end"
+    t.boolean "timed", default: true
+    t.text "description"
+    t.string "color"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["message_id"], name: "index_favorites_on_message_id"
+    t.index ["user_id"], name: "index_events_on_user_id"
+  end
+
+  create_table "favorites", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "article_id"
+    t.bigint "bookmark_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["article_id"], name: "index_favorites_on_article_id"
+    t.index ["bookmark_id"], name: "index_favorites_on_bookmark_id"
     t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
@@ -52,12 +76,33 @@ ActiveRecord::Schema.define(version: 2022_11_25_131848) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "likes", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "message_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["message_id"], name: "index_likes_on_message_id"
+    t.index ["user_id"], name: "index_likes_on_user_id"
+  end
+
   create_table "messages", force: :cascade do |t|
-    t.intenger "user_id"
+    t.bigint "user_id"
     t.string "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_messages_on_user_id"
+  end
+
+  create_table "profiles", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "gender"
+    t.string "age"
+    t.string "residence"
+    t.text "introduction"
+    t.string "hobby"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -66,11 +111,13 @@ ActiveRecord::Schema.define(version: 2022_11_25_131848) do
     t.string "encrypted_password", default: "", null: false
     t.string "name"
     t.string "email"
-    t.text "tokens"
+    t.json "tokens"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true
   end
 
+  add_foreign_key "bookmark_favorites", "bookmarks"
+  add_foreign_key "bookmark_favorites", "favorites"
 end

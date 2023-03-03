@@ -1,19 +1,30 @@
 <template>
     <nav>
         <div>
-            <p>header_testです</p>
+            <p>header</p>
             <p>こんにちは、<span class="name">{{ name }}</span>さん</p>
             <p class="email">現在、 {{ email }} でログイン中です</p>
             <div class="error">{{ error }}</div>
         </div>
+        <router-link to="/userprofile">プロフィール</router-link>
         <button @click="logout">ログアウト</button>
     </nav>
 </template>
 
 <script>
+import { useRouter } from 'vue-router'
 import axios from 'axios'
 
 export default {
+    setup(){
+        const router = useRouter()
+        const profile = () =>{
+            router.push('/userprofile')
+        }
+        return{
+            profile
+        }
+    },
     data () {
         return {
             name: window.localStorage.getItem('name'),

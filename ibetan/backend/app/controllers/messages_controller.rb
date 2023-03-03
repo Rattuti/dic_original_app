@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
     before_action :authenticate_user!, only: ["index"]
 
     def index
-        messages = Message.all
+        messages = Message.includes(:user, [likes: :user])
         messages_array = messages.map do |message|
             {
                 id: message.id,
@@ -11,12 +11,13 @@ class MessagesController < ApplicationController
                 content: message.content,
                 email: message.user.email,
                 created_at: message.created_at,
-                favorites: message.favorites.map{ |favorite| {id: favorite.id, email: favorite.user.email} }
+                likes: message.likes.map { |like| { id: like.id, email: like.user.email }  }
             }
         end
     
-        render json: messages_array, status: 200
+        render json: messages_array, status: :ok
     
     end
+
 
 end

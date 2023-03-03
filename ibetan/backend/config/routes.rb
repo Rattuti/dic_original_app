@@ -1,29 +1,29 @@
 Rails.application.routes.draw do
+
   constraints format: :json do
     mount_devise_token_auth_for 'User', at: 'auth', controllers: {
       registrations: 'auth/registrations'
     }
 
-    resources :messages, only: ['index'] do
-      member do
-        resources :bookmarks, only: ['create']
-      end
-    end
+    resources :profiles, only: ['create', 'update']
 
     resources :messages, only: ['index'] do
       member do
-        resources :favorites, only: ['create']
+        resources :likes, only: ['create']
       end
     end
 
     resources :articles, only: ['index'] do
       member do
-        resources :bookmarks, only: ['create']
+        resources :bookmarks, :favorites, only: ['create']
       end
     end
 
-    resources :favorites, only: ['destroy']
-    resources :bookmarks, only: ['destroy']
+    resources :events, only: ['index', 'show', 'create', 'update']
+
+    resources :bookmarks, :favorites, :likes, :events, only: ['destroy']
 
   end
+
+
 end

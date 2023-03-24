@@ -56,6 +56,6 @@ https://docs.google.com/spreadsheets/d/1EYnPyTVao9NgTIP9SUbL1AImMYYjSJZmA7Hq0IoZ
 ## ワイヤーフレーム
 https://drive.google.com/file/d/1EvBxrhue4H-MsAJLpDibsYzhQZXq8ggE/view?usp=sharing
 
-##　アプリの現状
+## アプリの現状
 ![image](https://user-images.githubusercontent.com/93857649/227443734-3ea9a8f0-c9f2-4c0e-8810-73d8e971a0e6.png)
 

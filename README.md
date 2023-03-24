@@ -26,17 +26,6 @@
 </ul>
 
 ### 使用ライブラリ
-<ul>
-  <li>JavaScript API
-    <br>　Google Maps をウェブサイトに表示する 
-  <li>Directions API
-    <br>　最適化された経路検索を自動でできる
-  <li>Distance Matrix API
-    <br>　複数の始点・終点の組み合わせルートの「距離」「時間」を求められる
-  <li>Places API
-    <br>　施設検索の API、一億件以上の詳細情報を検索・表示できる
-</ul>
-
 <ul>Gem
   <li>mechanize
     <br>　指定するWebサイトから取り出したいHTML要素を探して持ってくる
